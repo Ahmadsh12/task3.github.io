@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.basketball {
+    display: flex;
+    justify-content: center;
+}
+
+.basketball .basket {
+    position: absolute;
+
+
+}
+
+.basketball button {
+    position: absolute;
+    width: 90px;
+    height: 61px;
+    margin-top: 81px;
+    margin-left: 3px;
+    background-color: white;
+    border: 10px;
+    cursor: pointer;
+}
+
+.basketball .ball {
+    position: relative;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+.basketball .stick {
+    position: absolute;
+    justify-content: center;
+    background-color: blue;
+    width: 10px;
+    margin-top: 180px;
+    height: 699px;
+    z-index: -1;
+}
+
+.ground {
+    background-color: blue;
+    height: 50px;
+    margin-top: 735px;
+}
+
+.balljav {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 65px;
+    cursor: pointer;
+}
+
+@keyframes ball {
+    0% {
+        top: 735px;
+    }
+
+    25% {
+        top: -35px;
+        transform: scale(0.5);
+    }
+
+    30% {
+        top: 35px;
+        transform: scale(0.5);
+    }
+
+    40% {
+        top: -35px;
+        transform: scale(0.5);
+    }
+
+    50% {
+        top: 35px;
+        transform: scale(0.5);
+    }
+
+    60% {
+        top: -35px;
+        transform: scale(0.5);
+    }
+
+    70% {
+        top: 35px;
+        transform: scale(0.5);
+    }
+
+    100% {
+        top: 735px;
+        z-index: -1;
+
+    }
+}
